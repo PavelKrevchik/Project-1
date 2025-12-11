@@ -21,8 +21,84 @@ button {
    background-color: transparent;
 }
 
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
 .header {
-   height: 76px;
    background-color: #0A61F7;
+}
+
+.header__nav {
    display: flex;
+   justify-content: space-between;
+}
+
+.header__link-logo {
+   padding: 14px 0;
+}
+
+.header__list {
+   display: flex;
+   align-items: center;
+}
+
+.header__link {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 1.6;
+   letter-spacing: 0.12em;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.header__item {
+   margin-right: 24px;
+}
+
+.header__item:last-child {
+   margin-right: 0;
+}
+
+.head {
+   padding-top: 150px;
+   background-color: #fff;
+}
+
+.head__box {
+   display: flex;
+   align-items: center;
+}
+
+.head__info {
+   margin-right: 25px;
+}
+
+.head__title {
+   font-weight: 500;
+   font-size: 58px;
+   line-height: 1.2;
+   color: #363940;
+   margin-bottom: 30px;
+}
+
+.head__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.3;
+   color: #95a1bb;
+   margin-bottom: 40px;
+}
+
+.head__btn {
+   padding: 15px 24px;
+   border-radius: 4px;
+   background-color: #0a61f7;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.4;
+   letter-spacing: 0.1em;
+   color: #fff;
+   text-transform: uppercase;
 }
