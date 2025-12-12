@@ -26,6 +26,29 @@ button {
    margin: 0 auto;
 }
 
+.title-h2 {
+   font-weight: 500;
+   font-size: 32px;
+   line-height: 1.3;
+   color: #363940;
+}
+
+.text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.3;
+   color: #95a1bb;
+}
+
+.btn {
+   font-weight: 500;
+   font-size: 14px;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;  
+   background-color: #0A61F7;
+}
+
 .header {
    background-color: #0A61F7;
 }
@@ -79,26 +102,128 @@ button {
    font-weight: 500;
    font-size: 58px;
    line-height: 1.2;
-   color: #363940;
    margin-bottom: 30px;
+   color: #363940;
 }
 
 .head__text {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.3;
-   color: #95a1bb;
    margin-bottom: 40px;
 }
 
 .head__btn {
    padding: 15px 24px;
    border-radius: 4px;
-   background-color: #0a61f7;
-   font-weight: 500;
-   font-size: 14px;
    line-height: 1.4;
    letter-spacing: 0.1em;
-   color: #fff;
-   text-transform: uppercase;
+}
+
+.rates {
+   padding: 100px 0;
+   background-color: #f9fafc;
+   text-align: center;
+}
+
+.rates__title {
+   margin-bottom: 20px;
+}
+
+.rates__text {
+   margin-bottom: 40px;
+}
+
+.rates__table {
+   width: 940px;
+   margin: 0 auto;
+}
+
+.rates__td,
+.rates__tr-th,
+.rates__table,
+.rates__th {
+   border: 1px solid #95a1bb;
+   border-collapse: collapse;
+}
+
+.rates__tr-th {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #363940;
+   text-align: left;
+   padding: 15px 0 15px 20px;
+}
+
+.rates__th,
+.rates__tr-th {
+   width: 241px;
+}
+
+.rates__th {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.2;
+   color: #363940;
+}
+
+.tr-btn {
+   height: 96px;
+}
+
+.th {
+   color: #95a1bb;
+}
+
+.rates__link {
+   color: #0a61f7;
+}
+
+.rates__btn {
+   padding: 8px 40px;
+   border: 1px solid #0a61f7;
+   border-radius: 4px;
+   font-size: 12px;
+   line-height: 1.6;
+   letter-spacing: 0.12em;
+}
+
+.btn-color {
+   background-color: #f9fafc;
+   color: #0A61F7;
+}
+
+.account {
+   padding: 100px 0;
+}
+
+.account__box {
+   display: flex;
+}
+
+.account__info {
+   max-width: 500px;
+   margin-right: 160px;
+}
+
+.account__title {
+   margin-bottom: 50px;
+}
+
+.account__text {
+   margin-bottom: 40px;
+}
+
+.account__list {
+   list-style-image: url(assets/images/Mask.svg);
+   padding-left: 20px;
+   
+}
+
+.account__item {
+   margin-bottom: 15px;
+   padding-left: 10px;
+   color: #363940;
+}
+
+.account__item:last-child {
+   margin-bottom: 0;
 }

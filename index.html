@@ -35,107 +35,109 @@
          <div class="head__box">
             <div class="head__info">
                <h1 class="head__title">Markup achievement</h1>
-               <p class="head__text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
-               <button class="head__btn">Learn More</button>
+               <p class="head__text text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
+               <button class="head__btn btn">Learn More</button>
             </div>
             <img class="head__img" src="assets/images/image.png" alt="Общая картинка">
          </div>
       </div>
    </section>
-   <section>
+   <section class="rates">
       <div class="container">
-         <h2>Rates</h2>
-         <p>Failure will never overtake me if my determination to succeed is strong enough.</p>
-         <table>
-            <thead>
-               <tr>
-                  <th>Features</th>
-                  <th>Standart</th>
-                  <th>Plus</th>
-                  <th>PRO</th>
+         <h2 class="rates__title title-h2">Rates</h2>
+         <p class="rates__text text">Failure will never overtake me if my determination to succeed is strong enough.</p>
+         <table class="rates__table">
+            <thead class="rates__thead">
+               <tr class="rates__tr">
+                  <th class="rates__tr-th th">Features</th>
+                  <th class="rates__th">Standart</th>
+                  <th class="rates__th">Plus</th>
+                  <th class="rates__th">PRO</th>
                </tr>
             </thead>
-            <tbody>
-               <tr>
-                  <th>Theory</th>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
+            <tbody class="rates__tboby">
+               <tr class="rates__tr">
+                  <th class="rates__tr-th">Theory</th>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
                </tr>
-               <tr>
-                  <th>Practice</th>
-                  <td><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
+               <tr class="rates__tr">
+                  <th class="rates__tr-th">Practice</th>
+                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
                </tr>
-               <tr>
-                  <th>Code review</th>
-                  <td><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td><img src="assets/images/Check.svg" alt="Галочка"></td>
+               <tr class="rates__tr">
+                  <th class="rates__tr-th">Code review</th>
+                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
                </tr>
-               <tr>
-                  <th><a href="#">Have questions?</a></th>
-                  <td><button>get now</button></td>
-                  <td><button>get now</button></td>
-                  <td><button>get now</button></td>
+               <tr class="rates__tr tr-btn">
+                  <th class="rates__tr-th"><a class="rates__link" href="#">Have questions?</a></th>
+                  <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
+                  <td class="rates__td"><button class="rates__btn btn">get now</button></td>
+                  <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
                </tr>
             </tbody>
          </table>
       </div>
    </section>
-   <section>
+   <section class="account">
       <div class="container">
-         <div class="">
-            <h2>Create your free account</h2>
-            <p>Let us first talk about dreams. We all know that dreams do play a role in our daily lives. The majority of people pay little attention to dreams. Dreams can help us find solutions to our daily problems and see things from a different perspective. Whenever we are dreaming, we can be who or what we want to be, regardless of the fact that in real life.</p>
-            <ul>
-               <li>Easy setup, fast start</li>
-               <li>Free forever for core features</li>
-               <li>14-day trial of premium features</li>
-            </ul>
+         <div class="account__box">
+            <div class="account__info">
+               <h2 class="account__title title-h2">Create your free account</h2>
+               <p class="account__text text">Let us first talk about dreams. We all know that dreams do play a role in our daily lives. The majority of people pay little attention to dreams. Dreams can help us find solutions to our daily problems and see things from a different perspective. Whenever we are dreaming, we can be who or what we want to be, regardless of the fact that in real life.</p>
+               <ul class="account__list">
+                  <li class="account__item text">Easy setup, fast start</li>
+                  <li class="account__item text">Free forever for core features</li>
+                  <li class="account__item text">14-day trial of premium features</li>
+               </ul>
+            </div>
+            <form class="account__form">
+               <input type="text" placeholder="Full Name*">
+               <input type="email" placeholder="Email*">
+               <input type="password" placeholder="Password*">
+               <input type="date">
+               <select name="country">
+                  <option selected disabled value="country">Country</option>
+                  <option value="belarus">Belarus</option>
+                  <option value="china">China</option>
+                  <option value="USA">USA</option>
+               </select>
+               <label for="front">
+                  <input type="radio" name="stack" checked id="front">
+                  Frontend
+               </label>
+               <label for="back">
+                  <input type="radio" name="stack" id="back">
+                  Backend
+               </label>
+               <fieldset>
+                  <legend>Favorite Technologies</legend>
+                  <label id="html">
+                     <input type="checkbox" name="html" checked>
+                     HTML
+                  </label>
+                  <label id="css">
+                     <input type="checkbox" name="css" checked>
+                     CSS
+                  </label>
+                  <label id="react">
+                     <input type="checkbox" name="react">
+                     React
+                  </label>
+                  <label id="styled-components">
+                     <input type="checkbox" name="styled-components">
+                     Styled components
+                  </label>
+               </fieldset>
+               <textarea name="comments" placeholder="Something else about you..."></textarea>
+               <input class="btn" type="submit" value="REGISTRATION">
+            </form>
          </div>
-         <form>
-            <input type="text" placeholder="Full Name*">
-            <input type="email" placeholder="Email*">
-            <input type="password" placeholder="Password*">
-            <input type="date">
-            <select name="country">
-               <option selected disabled value="country">Country</option>
-               <option value="belarus">Belarus</option>
-               <option value="china">China</option>
-               <option value="USA">USA</option>
-            </select>
-            <label for="front">
-               <input type="radio" name="stack" checked id="front">
-               Frontend
-            </label>
-            <label for="back">
-               <input type="radio" name="stack" id="back">
-               Backend
-            </label>
-            <fieldset>
-               <legend>Favorite Technologies</legend>
-               <label id="html">
-                  <input type="checkbox" name="html" checked>
-                  HTML
-               </label>
-               <label id="css">
-                  <input type="checkbox" name="css" checked>
-                  CSS
-               </label>
-               <label id="react">
-                  <input type="checkbox" name="react">
-                  React
-               </label>
-               <label id="styled-components">
-                  <input type="checkbox" name="styled-components">
-                  Styled components
-               </label>
-            </fieldset>
-            <textarea name="comments" placeholder="Something else about you..."></textarea>
-            <input type="submit" value="REGISTRATION">
-         </form>
       </div>
    </section>
    <footer>
