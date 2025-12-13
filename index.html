@@ -97,25 +97,27 @@
                </ul>
             </div>
             <form class="account__form">
-               <input type="text" placeholder="Full Name*">
-               <input type="email" placeholder="Email*">
-               <input type="password" placeholder="Password*">
-               <input type="date">
-               <select name="country">
-                  <option selected disabled value="country">Country</option>
-                  <option value="belarus">Belarus</option>
-                  <option value="china">China</option>
-                  <option value="USA">USA</option>
+               <input class="account__input style-input" type="text" placeholder="Full Name*">
+               <input class="account__input style-input" type="email" placeholder="Email*">
+               <input class="account__input style-input" type="password" placeholder="Password*">
+               <input class="account__date style-input" type="date">
+               <select class="account__select style-input" name="country">
+                  <option class="account__option" selected disabled value="country">Country</option>
+                  <option class="account__option" value="belarus">Belarus</option>
+                  <option class="account__option" value="china">China</option>
+                  <option class="account__option" value="USA">USA</option>
                </select>
-               <label for="front">
-                  <input type="radio" name="stack" checked id="front">
-                  Frontend
-               </label>
-               <label for="back">
-                  <input type="radio" name="stack" id="back">
-                  Backend
-               </label>
-               <fieldset>
+               <div class="account__chek">
+                  <label class="account__label" for="front">
+                     <input type="radio" name="stack" checked id="front">
+                     Frontend
+                  </label>
+                  <label class="account__label" for="back">
+                     <input type="radio" name="stack" id="back">
+                     Backend
+                  </label>
+               </div>
+               <fieldset class="account__fiel ">
                   <legend>Favorite Technologies</legend>
                   <label id="html">
                      <input type="checkbox" name="html" checked>
@@ -134,15 +136,15 @@
                      Styled components
                   </label>
                </fieldset>
-               <textarea name="comments" placeholder="Something else about you..."></textarea>
-               <input class="btn" type="submit" value="REGISTRATION">
+               <textarea class="account__textarea style-input" name="comments" placeholder="Something else about you..."></textarea>
+               <button class="account__btn btn">registration</button>
             </form>
          </div>
       </div>
    </section>
-   <footer>
+   <footer class="footer">
       <div class="container">
-         <small>Copyright © 2023. All rights reserved.</small>
+         <small class="footer__text text">Copyright © 2023. All rights reserved.</small>
       </div>
    </footer>
 </body>
