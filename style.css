@@ -191,90 +191,168 @@ button {
    color: #0A61F7;
 }
 
-.account {
+.registr {
    padding: 100px 0;
 }
 
-.account__box {
+.registr__box {
    display: flex;
 }
 
-.account__info {
+.registr__info {
    max-width: 500px;
    margin-right: 160px;
 }
 
-.account__title {
+.registr__title {
    margin-bottom: 50px;
 }
 
-.account__text {
+.registr__text {
    margin-bottom: 40px;
 }
 
-.account__list {
+.registr__list {
    list-style-image: url(assets/images/Mask.svg);
    padding-left: 20px;
    
 }
 
-.account__item {
+.registr__item {
    margin-bottom: 15px;
    padding-left: 10px;
    color: #363940;
 }
 
-.account__item:last-child {
+.registr__item:last-child {
    margin-bottom: 0;
 }
 
-.account__form {
-   color: #95a1bb;
-}
-
-.style-input {
-   border: 1px solid #95a1bb;
-   border-radius: 4px;
-   width: 230px;
-   height: 50px;
-   padding: 14px 0 14px 15px;
-   margin-bottom: 20px;
-}
-
-.style-input:nth-child(odd) {
-   margin-right: 0;
-}
-
-.style-input::placeholder {
+.registr__form,
+.registr__input::placeholder,
+.registr__textarea::placeholder,
+.registr__select  {
    font-weight: 400;
    font-size: 16px;
    line-height: 1.4;
    color: #95a1bb;
 }
 
-.account__input[type="text"] {
-   width: 100%;
-}
-
-.account__chek {
-   margin-bottom: 20px;
-}
-
-.account__fiel {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 20px;
-   padding: 30px 20px;
+.registr__input,
+.registr__select,
+.registr__textarea,
+.registr__field {
+   padding: 14px 15px;
    border: 1px solid #95a1bb;
    border-radius: 4px;
+   margin-bottom: 20px;
 }
 
-.account__textarea {
+.registr__input {
+   margin-right: 16px;
+}
+
+.registr__input:nth-child(odd) {
+   margin-right: 0;
+}
+
+.registr__radio-box {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.registr__label {
+   display: flex;
+   align-items: center;
+   margin-right: 30px;
+}
+
+.registr__label:last-child {
+   margin-right: 0;
+}
+
+.registr__input,
+.registr__select {
+   width: 230px;
+   height: 50px;
+}
+
+.registr__input[type="text"],
+.registr__textarea {
    width: 100%;
-   min-height: 80px;
 }
 
-.account__btn {
+.registr__select {
+   appearance: none;
+   background: url(assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+}
+
+.registr__select:focus {
+   outline: none;
+}
+
+.registr__input[type="date"] {
+   background: url(assets/images/Calendar.svg) no-repeat right 15px top 50%;
+}
+
+
+.registr__input[type="date"]::-webkit-calendar-picker-indicator {
+   opacity: 0;
+}
+
+.registr__radio,
+.registr__check {
+   appearance: none;
+   border: 1px solid #95a1bb;
+   margin-right: 8px;
+}
+
+.registr__radio {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%; 
+}
+
+.registr__radio:checked {
+   background: url(assets/images/Ellipse.svg) no-repeat center;
+   border: 1px solid #0A61F7;
+}
+
+.registr__radio:hover,
+.registr__check:hover {
+   border: 1px solid #0A61F7;
+}
+
+.registr__check {
+   width: 15px;
+   height: 15px;
+   border-radius: 2px;
+}
+
+.registr__check:checked {
+   background: url(assets/images/Mask-2.svg) no-repeat center;
+   background-color: #0A61F7;
+   border: 1px solid #0A61F7;
+}
+
+.registr__leg {
+   padding: 0 6px;
+}
+
+.registr__field {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 15px;
+}
+
+.registr__textarea {
+   resize: none;
+   height: 80px;
+   overflow: auto;
+   outline: none;
+}
+
+.registr__btn {
    width: 100%;
    height: 51px;
    border-radius: 4px;
