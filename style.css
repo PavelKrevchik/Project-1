@@ -232,6 +232,7 @@ button {
 .registr__input::placeholder,
 .registr__textarea::placeholder,
 .registr__select  {
+   font-family: 'Rubik', sans-serif;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.4;
