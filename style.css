@@ -47,6 +47,11 @@ button {
    text-align: center;
    color: #fff;  
    background-color: #0A61F7;
+   transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+   background-color: #99beff;
 }
 
 .header {
@@ -65,6 +70,7 @@ button {
 .header__list {
    display: flex;
    align-items: center;
+   gap: 24px;
 }
 
 .header__link {
@@ -74,15 +80,13 @@ button {
    letter-spacing: 0.12em;
    color: #fff;
    text-transform: uppercase;
+   transition: all .3s ease-in-out;
 }
 
-.header__item {
-   margin-right: 24px;
+.header__link:hover {
+   color: #99beff;
 }
 
-.header__item:last-child {
-   margin-right: 0;
-}
 
 .head {
    padding-top: 150px;
@@ -186,6 +190,10 @@ button {
    letter-spacing: 0.12em;
 }
 
+.rates__btn:hover {
+   border: 1px solid #99beff;
+}
+
 .btn-color {
    background-color: #f9fafc;
    color: #0A61F7;
@@ -213,19 +221,22 @@ button {
 }
 
 .registr__list {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
    list-style-image: url(assets/images/Mask.svg);
    padding-left: 20px;
-   
 }
 
 .registr__item {
-   margin-bottom: 15px;
    padding-left: 10px;
    color: #363940;
 }
 
-.registr__item:last-child {
-   margin-bottom: 0;
+.registr__form {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 .registr__form,
@@ -246,31 +257,26 @@ button {
    padding: 14px 15px;
    border: 1px solid #95a1bb;
    border-radius: 4px;
-   margin-bottom: 20px;
+   transition: all .3s ease-in-out;
 }
 
-.registr__input {
-   margin-right: 16px;
-}
-
-.registr__input:nth-child(odd) {
-   margin-right: 0;
+.registr__input:hover,
+.registr__select:hover,
+.registr__textarea:hover,
+.registr__field:hover {
+   border: 1px solid #0A61F7;
 }
 
 .registr__radio-box {
    display: flex;
-   margin-bottom: 20px;
+   gap: 30px;
 }
 
 .registr__label {
    display: flex;
    align-items: center;
-   margin-right: 30px;
 }
 
-.registr__label:last-child {
-   margin-right: 0;
-}
 
 .registr__input,
 .registr__select {
@@ -306,6 +312,7 @@ button {
    appearance: none;
    border: 1px solid #95a1bb;
    margin-right: 8px;
+   transition: all .3s ease-in-out;
 }
 
 .registr__radio {
@@ -322,6 +329,14 @@ button {
 .registr__radio:hover,
 .registr__check:hover {
    border: 1px solid #0A61F7;
+}
+
+.registr__label {
+   transition: all .3s ease-in-out;
+}
+
+.registr__label:hover {
+   color: #0A61F7;
 }
 
 .registr__check {
@@ -343,6 +358,7 @@ button {
 .registr__field {
    display: flex;
    justify-content: space-between;
+   width: 100%;
    padding: 30px 15px;
 }
 
