@@ -16,17 +16,23 @@
             <a class="header__link-logo" href="#">
                <img src="assets/images/Logo.svg" alt="Логотип школы IT-incubator">
             </a>
-            <ul class="header__list">
-               <li class="header__item">
-                  <a class="header__link" href="#">Main</a>
-               </li>
-               <li class="header__item"> 
-                  <a class="header__link" href="#">Rates</a>
-               </li>
-               <li class="header__item">
-                  <a class="header__link" href="#">create account</a>
-               </li>
-            </ul>
+            <div class="header__hamburger-menu">
+               <input id="menu__toggle" type="checkbox" />
+               <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+               </label>
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a class="header__link" href="#">Main</a>
+                  </li>
+                  <li class="header__item"> 
+                     <a class="header__link" href="#">Rates</a>
+                  </li>
+                  <li class="header__item">
+                     <a class="header__link" href="#">create account</a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </div>
    </header>
@@ -46,42 +52,45 @@
       <div class="container">
          <h2 class="rates__title title-h2">Rates</h2>
          <p class="rates__text text">Failure will never overtake me if my determination to succeed is strong enough.</p>
-         <table class="rates__table">
-            <thead class="rates__thead">
-               <tr class="rates__tr">
-                  <th class="rates__tr-th th">Features</th>
-                  <th class="rates__th">Standart</th>
-                  <th class="rates__th">Plus</th>
-                  <th class="rates__th">PRO</th>
-               </tr>
-            </thead>
-            <tbody class="rates__tboby">
-               <tr class="rates__tr">
-                  <th class="rates__tr-th">Theory</th>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-               </tr>
-               <tr class="rates__tr">
-                  <th class="rates__tr-th">Practice</th>
-                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-               </tr>
-               <tr class="rates__tr">
-                  <th class="rates__tr-th">Code review</th>
-                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
-                  <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
-               </tr>
-               <tr class="rates__tr tr-btn">
-                  <th class="rates__tr-th"><a class="rates__link" href="#">Have questions?</a></th>
-                  <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
-                  <td class="rates__td"><button class="rates__btn btn">get now</button></td>
-                  <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
-               </tr>
-            </tbody>
-         </table>
+         <div class="scroll">
+            <table class="rates__table">
+               <thead class="rates__thead">
+                  <tr class="rates__tr">
+                     <th class="rates__tr-th th">Features</th>
+                     <th class="rates__th">Standart</th>
+                     <th class="rates__th">Plus</th>
+                     <th class="rates__th">PRO</th>
+                  </tr>
+               </thead>
+               <tbody class="rates__tboby">
+                  <tr class="rates__tr">
+                     <th class="rates__tr-th">Theory</th>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  </tr>
+                  <tr class="rates__tr">
+                     <th class="rates__tr-th">Practice</th>
+                     <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  </tr>
+                  <tr class="rates__tr">
+                     <th class="rates__tr-th">Code review</th>
+                     <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                     <td class="rates__td"><img src="assets/images/Close.svg" alt="Крестик"></td>
+                     <td class="rates__td"><img src="assets/images/Check.svg" alt="Галочка"></td>
+                  </tr>
+                  <tr class="rates__tr tr-btn">
+                     <th class="rates__tr-th"><a class="rates__link" href="#">Have questions?</a></th>
+                     <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
+                     <td class="rates__td"><button class="rates__btn btn">get now</button></td>
+                     <td class="rates__td"><button class="rates__btn btn btn-color">get now</button></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         
       </div>
    </section>
    <section class="registr">

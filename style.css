@@ -6,6 +6,7 @@
 
 body {
    font-family: "Rubik", sans-serif;
+   min-width: 375px;
 }
 
 a {
@@ -22,8 +23,9 @@ button {
 }
 
 .container {
-   max-width: 1140px;
+   max-width: 1170px;
    margin: 0 auto;
+   padding: 0 15px;
 }
 
 .title-h2 {
@@ -54,6 +56,41 @@ button {
    background-color: #99beff;
 }
 
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 27px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
 .header {
    background-color: #0A61F7;
 }
@@ -61,6 +98,10 @@ button {
 .header__nav {
    display: flex;
    justify-content: space-between;
+}
+
+.header__hamburger-menu {
+   display: flex;
 }
 
 .header__link-logo {
@@ -111,6 +152,7 @@ button {
 }
 
 .head__text {
+   max-width: 380px;
    margin-bottom: 40px;
 }
 
@@ -205,11 +247,11 @@ button {
 
 .registr__box {
    display: flex;
+   justify-content: space-between;
 }
 
 .registr__info {
    max-width: 500px;
-   margin-right: 160px;
 }
 
 .registr__title {
@@ -236,13 +278,15 @@ button {
 .registr__form {
    display: flex;
    flex-wrap: wrap;
+   max-width: 480px;
    gap: 20px;
 }
 
 .registr__form,
 .registr__input::placeholder,
 .registr__textarea::placeholder,
-.registr__select  {
+.registr__select,
+.registr__input[type='date'] {
    font-family: 'Rubik', sans-serif;
    font-weight: 400;
    font-size: 16px;
@@ -306,6 +350,11 @@ button {
 
 .registr__input[type="date"]::-webkit-calendar-picker-indicator {
    opacity: 0;
+}
+
+.registr__input[type="date"]::-webkit-date-input-text {
+   border: 2px solid red;
+   color: red;
 }
 
 .registr__radio,
@@ -386,4 +435,117 @@ button {
    font-size: 14px;
    color: #fff;
    line-height: 1.57143;
+}
+
+
+@media screen and (max-width: 1010px) {
+
+   .head {
+      padding-top: 100px;
+   }
+   
+   .head__box {
+      flex-direction: column;
+      gap: 80px;
+   }
+
+   .head__info {
+      align-self: flex-start;
+   }
+
+   .head__img {
+      max-width: 656px;
+      width: 100%;
+      object-fit: cover;
+   }
+
+   .scroll {
+      overflow-x: scroll;
+      scrollbar-width: none;
+   }
+   
+   .registr__box {
+      flex-direction: column;
+      gap: 70px;
+   }
+
+   .registr__info {
+      max-width: none;
+   }
+
+   .registr__form {
+      align-self: center;
+   }
+
+}
+
+@media screen and (max-width: 576px) {
+
+   .head {
+      padding-top: 60px;
+   }
+
+   .menu__btn {
+      opacity: 1;
+   }
+   /* контейнер меню */
+   .header__list {
+      display: block;
+      position: fixed;
+      top: 80px;
+      right: -200px;
+      width: 200px;
+      background-color: #0A61F7;
+   }
+   /* элементы меню */
+   .header__item {
+      display: block;
+      padding: 12px 24px;
+      color: #fff;
+      
+   }
+
+   #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+   }
+   #menu__toggle:checked ~ .header__list {
+      right: 0;
+   }
+
+   .menu__btn > span,
+   .menu__btn > span::before,
+   .menu__btn > span::after {
+      transition-duration: .25s;
+   }
+   .header__list {
+      transition-duration: .25s;
+   }
+   .header__item {
+      transition-duration: .25s;
+   }
+   
+   .head__title {
+      font-size: 52px;
+   }
+
+   .registr__input,
+   .registr__select {
+      width: 100%;
+   }
+
+   .registr__field {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 30px;
+   }
+
+
 }
